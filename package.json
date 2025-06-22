@@ -1,0 +1,43 @@
+{
+  "name": "ai-interview-simulator",
+  "version": "1.0.0",
+  "description": "AI-powered mock interview platform to help job seekers practice and improve their interview skills",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-server": "cd backend && npm install",
+    "install-client": "cd frontend && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "start": "cd backend && npm start",
+    "heroku-postbuild": "npm run install-all && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ai-interview-simulator.git"
+  },
+  "keywords": [
+    "interview",
+    "ai",
+    "mock-interview",
+    "job-preparation",
+    "speech-recognition",
+    "career-development",
+    "mern-stack"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/ai-interview-simulator/issues"
+  },
+  "homepage": "https://github.com/yourusername/ai-interview-simulator#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
